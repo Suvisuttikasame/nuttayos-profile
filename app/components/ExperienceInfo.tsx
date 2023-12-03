@@ -42,7 +42,7 @@ export default function ExperienceInfo() {
           </li>
         </ul>
       </div>
-      <div className="flex-grow bg-red-500"></div>
+      <div className="flex-grow bg-[#E63946]"></div>
     </div>
   );
 }
