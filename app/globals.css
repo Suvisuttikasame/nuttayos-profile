@@ -73,15 +73,7 @@ body {
       100% 0%
     );
   }
-  .clip-path-message {
-    clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      100% 80%,
-      55% 80%,
-      57% 100%,
-      43% 80%,
-      0 80%
-    );
+  .clip-path-under-line {
+    clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
   }
 }

@@ -19,21 +19,29 @@ export default function RootLayout({
       <body className={`${inter.className} relative flex flex-col`}>
         <div className="absolute w-3/4 z-30 left-1/2 -translate-x-2/4">
           <header className="flex justify-between border-[#E63946] border-b-4 py-4">
-            <div>
-              <Link href="/">My Profile</Link>
+            <div className="group transition ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-125">
+              <Link href="/">
+                <span>My Profile</span>
+                <div className="transition-[width] ease-in-out duration-500 delay-150 bg-[#7AA3B0] h-1 w-0 clip-path-under-line group-hover:w-3/4" />
+              </Link>
             </div>
-            <ul className="flex gap-x-4">
-              <li>
-                <Link href="/project" className="hover:scale-75">
-                  project
+            <ul className="flex gap-x-6">
+              <li className="group transition ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-125">
+                <Link href="/project">
+                  <span>project</span>
+                  <div className="transition-[width] ease-in-out duration-500 delay-150 bg-[#AAB8BC] h-1 w-0 clip-path-under-line group-hover:w-3/4" />
                 </Link>
               </li>
-              <li>
-                <Link href="/contact">contact me</Link>
+              <li className="group transition ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-125">
+                <Link href="/contact">
+                  <span>contact</span>
+                  <div className="transition-[width] ease-in-out duration-500 delay-150 bg-[#AAB8BC] h-1 w-0 clip-path-under-line group-hover:w-3/4" />
+                </Link>
               </li>
-              <li>
+              <li className="group transition ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-125">
                 <Link href="https://www.google.com/" target="_blank">
-                  github
+                  <span>github</span>
+                  <div className="transition-[width] ease-in-out duration-500 delay-150 bg-[#AAB8BC] h-1 w-0 clip-path-under-line group-hover:w-3/4" />
                 </Link>
               </li>
             </ul>
