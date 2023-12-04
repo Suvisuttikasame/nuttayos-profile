@@ -13,7 +13,7 @@ type props = {
 export default function ExperienceInfo({ arrayExp = [] }: props) {
   const [clickedItem, setClickedItem] = useState("");
   return (
-    <div className="flex gap-14 pl-2 pb-8">
+    <div className="flex gap-14 pl-2 pb-8 justify-center items-center">
       <div>
         <h1 className="text-lg decoration-1 transition duration-500 delay-150 hover:skew-y-2">
           Experience
@@ -32,30 +32,62 @@ export default function ExperienceInfo({ arrayExp = [] }: props) {
           })}
         </ul>
       </div>
-      <div className="flex-grow border-solid border-4 border-[#E63946] bg-[#FFFF] shadow-md shadow-[#E63946] rounded-md transition-all ease-in-out  duration-1000 delay-150 hover:[transform:rotateY(180deg)]">
-        <div className={`${clickedItem === "Hocco" ? "block" : "hidden"}`}>
-          <div>content1</div>
-          <div>picture1</div>
+      <div className="w-96 h-64 relative border-solid border-4 border-[#E63946] bg-[#FFFF] shadow-md shadow-[#E63946] rounded-md [transform-style:preserve-3d] transition-all ease-in-out  duration-1000 delay-150 hover:[transform:rotateY(180deg)]">
+        <div
+          className={`${
+            clickedItem === "Hocco" ? "block" : "hidden"
+          } bg-green-500 absolute w-full h-full [backface-visibility:hidden]`}
+        >
+          <p>content1</p>
+        </div>
+        <div
+          className={`${
+            clickedItem === "Hocco" ? "block" : "hidden"
+          } [transform:rotateY(180deg)] bg-red-500 absolute w-full h-full [backface-visibility:hidden]`}
+        >
+          <p>picture1</p>
         </div>
         <div
           className={`${
             clickedItem === "Denso Intenational Asia" ? "block" : "hidden"
-          }`}
+          } bg-green-500 absolute w-full h-full [backface-visibility:hidden]`}
         >
-          <div>content2</div>
-          <div>picture2</div>
+          <p>content2</p>
+        </div>
+        <div
+          className={`${
+            clickedItem === "Denso Intenational Asia" ? "block" : "hidden"
+          } [transform:rotateY(180deg)] bg-red-500 absolute w-full h-full [backface-visibility:hidden]`}
+        >
+          <p>picture2</p>
         </div>
         <div
           className={`${
             clickedItem === "Turnkey communication service" ? "block" : "hidden"
-          }`}
+          } bg-green-500 absolute w-full h-full [backface-visibility:hidden]`}
         >
-          <div>content3</div>
-          <div>picture3</div>
+          <p>content3</p>
         </div>
-        <div className={`${clickedItem === "Marsun" ? "block" : "hidden"}`}>
-          <div>content4</div>
-          <div>picture4</div>
+        <div
+          className={`${
+            clickedItem === "Turnkey communication service" ? "block" : "hidden"
+          } [transform:rotateY(180deg)] bg-red-500 absolute w-full h-full [backface-visibility:hidden]`}
+        >
+          <p>picture3</p>
+        </div>
+        <div
+          className={`${
+            clickedItem === "Marsun" ? "block" : "hidden"
+          } bg-green-500 absolute w-full h-full [backface-visibility:hidden]`}
+        >
+          <p>content4</p>
+        </div>
+        <div
+          className={`${
+            clickedItem === "Marsun" ? "block" : "hidden"
+          } [transform:rotateY(180deg)] bg-red-500 absolute w-full h-full [backface-visibility:hidden]`}
+        >
+          <p>picture4</p>
         </div>
       </div>
     </div>
