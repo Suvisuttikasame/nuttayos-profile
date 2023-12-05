@@ -5,27 +5,23 @@ import EducationInfo from "./components/EducationInfo";
 const exps = [
   {
     companyName: "Hocco",
-    duration: "time duration",
-    description:
-      "Neque porro quisquam est qui dulorem ipsum quia dolor sit amet",
+    duration: "Feb 2022 - present",
+    description: "Software house",
   },
   {
-    companyName: "Denso Intenational Asia",
-    duration: "time duration",
-    description:
-      "Neque porro quisquam est qui dulorem ipsum quia dolor sit amet",
+    companyName: "Denso International Asia Co.,Ltd",
+    duration: "Feb 2021 - Oct 2021",
+    description: "Asian regional hub of Denso group",
   },
   {
-    companyName: "Turnkey communication service",
-    duration: "time duration",
-    description:
-      "Neque porro quisquam est qui dulorem ipsum quia dolor sit amet",
+    companyName: "Turnkey Communication Services Co.,LTD.",
+    duration: "Feb 2019 - Feb 2021",
+    description: "Solution creator & System integrator company",
   },
   {
     companyName: "Marsun",
-    duration: "time duration",
-    description:
-      "Neque porro quisquam est qui dulorem ipsum quia dolor sit amet",
+    duration: "Aug 2018 - Feb 2019",
+    description: "Ship building company",
   },
 ];
 
