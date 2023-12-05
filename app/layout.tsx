@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nuttayos Profile",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative flex flex-col`}>
+      <body className={`${montserrat.className} relative flex flex-col`}>
         <div className="absolute w-3/4 z-30 left-1/2 -translate-x-2/4">
           <header className="flex justify-between border-[#E63946] border-b-4 py-4">
             <div className="group transition ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-125">
