@@ -7,7 +7,7 @@ type props = {
   description: string;
 };
 
-export default function ExperienceItem({
+export default function ExperienceList({
   clickFn,
   companyName,
   duration,
@@ -21,11 +21,11 @@ export default function ExperienceItem({
         clickFn(e.currentTarget.id);
       }}
     >
-      <div className="flex gap-2 justify-center items-center">
+      <div className="flex gap-2 items-center">
         <div
-          className="w-1.5 h-1.5 bg-[#1d3557] rounded -translate-y-4 transition-all ease-in-out duration-500 delay-150
-         before:absolute before:rounded before:origin-right before:right-0.5 before:w-0 before:h-1.5 before:transition-[width] before:bg-[#1d3557]
-         after:absolute after:rounded after:origin-right after:right-0.5 after:w-0 after:h-1.5 after:transition-[width] after:bg-[#1d3557]
+          className="w-1 h-1 bg-[#1d3557] rounded -translate-y-4 transition-all ease-in-out duration-500 delay-150
+         before:absolute before:rounded before:origin-right before:right-0.5 before:w-0 before:h-1 before:transition-[width] before:bg-[#1d3557]
+         after:absolute after:rounded after:origin-right after:right-0.5 after:w-0 after:h-1 after:transition-[width] after:bg-[#1d3557]
           group-hover:w-6 group-hover:before:w-3 group-hover:before:-rotate-45 group-hover:after:w-3 group-hover:after:rotate-45"
         />
         <div>
