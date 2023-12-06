@@ -1,24 +1,30 @@
-export default function EducationInfo() {
+import EducationList from "./EducationList";
+
+type props = {
+  arrayEdu: {
+    schoolName: string;
+    duration: string;
+  }[];
+};
+
+export default function EducationInfo({ arrayEdu = [] }: props) {
   return (
-    <div className="flex gap-14 pl-2">
-      <div className="flex-grow bg-red-500"></div>
+    <div className="flex gap-14 pl-2 pb-8 justify-center items-center">
+      <div className="h-56 w-56 bg-red-500">Object</div>
       <div>
-        <h1 className="text-lg decoration-1">Education</h1>
+        <h1 className="text-lg decoration-1 transition duration-500 delay-150 hover:skew-y-2">
+          Education
+        </h1>
         <ul className="flex flex-col gap-2 list-disc pl-4">
-          <li>
-            <span className="text-base">Chulalongkorn university</span>
-            <br />
-            <p>
-              Neque porro quisquam est qui dulorem ipsum quia dolor sit amet
-            </p>
-          </li>
-          <li>
-            <span className="text-base">Debsirin school</span>
-            <br />
-            <p>
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
-            </p>
-          </li>
+          {arrayEdu.map((element, index) => {
+            return (
+              <EducationList
+                schoolName={element.schoolName}
+                duration={element.duration}
+                key={index}
+              />
+            );
+          })}
         </ul>
       </div>
     </div>

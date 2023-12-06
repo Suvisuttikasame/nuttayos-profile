@@ -25,12 +25,23 @@ const exps = [
   },
 ];
 
+const edus = [
+  {
+    schoolName: "Chulalongkorn university",
+    duration: "..., bachelor degree of electrical engineering",
+  },
+  {
+    schoolName: "Debsirin",
+    duration: "..., high school",
+  },
+];
+
 export default async function Home() {
   return (
     <main className="text-xs py-8">
       <PersonalInfo />
       <ExperienceInfo arrayExp={exps} />
-      <EducationInfo />
+      <EducationInfo arrayEdu={edus} />
     </main>
   );
 }
