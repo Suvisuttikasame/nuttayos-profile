@@ -16,9 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} relative flex flex-col`}>
-        <div className="absolute w-3/4 z-30 left-1/2 -translate-x-2/4">
-          <header className="flex justify-between border-[#E63946] border-b-4 py-4">
+      <body className={`${montserrat.className}`}>
+        <div>
+          <header className="flex justify-between bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] border-[#E63946] border-b-4 py-8 px-8">
             <div className="group transition ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-125">
               <Link href="/">
                 <span>My Profile</span>
@@ -46,14 +46,13 @@ export default function RootLayout({
               </li>
             </ul>
           </header>
+          <div className="h-16 bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] clip-path-wave-down"></div>
           {children}
+          <div className="h-16 bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] clip-path-wave-up"></div>
+          <footer className="bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] text-xs text-center text-slate-500 py-4">
+            &copy; Nuttayos Suvisuttikasame. All Rights Reserved.
+          </footer>
         </div>
-        <div className="h-14 bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE]"></div>
-        <div className="h-28 bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] clip-path-wave"></div>
-        <div className="h-64"></div>
-        <div className="h-64 bg-white clip-path-wave"></div>
-        <div className="h-28 bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] -mt-28"></div>
-        <div className="h-28 bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] clip-path-wave"></div>
       </body>
     </html>
   );
