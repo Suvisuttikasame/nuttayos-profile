@@ -5,7 +5,7 @@ type props = {
 };
 export default function ExperienceCard({ clickedItem }: props) {
   return (
-    <div className="w-96 h-64 relative bg-[#F0EFF4] rounded-md p-4 [transform-style:preserve-3d] transition-all ease-in-out  duration-1000 delay-150 hover:[transform:rotateY(180deg)]">
+    <div className="w-96 h-64 relative bg-[#F0EFF4] rounded-md [transform-style:preserve-3d] transition-all ease-in-out  duration-1000 delay-150 hover:[transform:rotateY(180deg)]">
       <div
         className={`${
           clickedItem === "Hocco" ? "block" : "hidden"
