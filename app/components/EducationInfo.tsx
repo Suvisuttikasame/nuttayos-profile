@@ -1,4 +1,6 @@
 import EducationList from "./EducationList";
+import Loading from "../loading";
+import dynamic from "next/dynamic";
 
 type props = {
   arrayEdu: {
@@ -6,11 +8,16 @@ type props = {
     duration: string;
   }[];
 };
+const MyModel = dynamic(() => import("../model/MyModel"), {
+  loading: () => <Loading />,
+});
 
 export default function EducationInfo({ arrayEdu = [] }: props) {
   return (
     <div className="flex gap-14 pl-2 pb-8 justify-center items-center">
-      <div className="h-56 w-56 bg-red-500">Object</div>
+      <div className="flex">
+        <MyModel />
+      </div>
       <div>
         <h1 className="text-lg decoration-1 transition duration-500 delay-150 hover:skew-y-2">
           Education
