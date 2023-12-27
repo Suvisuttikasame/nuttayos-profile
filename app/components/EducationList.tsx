@@ -6,7 +6,7 @@ type props = {
 export default function EducationList({ schoolName, duration }: props) {
   return (
     <li>
-      <span className="text-base">{schoolName}</span>
+      <span className="text-base font-semibold">{schoolName}</span>
       <br />
       <p>{duration}</p>
     </li>

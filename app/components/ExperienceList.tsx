@@ -29,7 +29,7 @@ export default function ExperienceList({
           group-hover:w-6 group-hover:before:w-3 group-hover:before:-rotate-45 group-hover:after:w-3 group-hover:after:rotate-45"
         />
         <div>
-          <span className="text-base">{companyName}</span>
+          <span className="text-base font-semibold">{companyName}</span>
           <br />
           <span>{duration}</span>
           <p>{description}</p>
