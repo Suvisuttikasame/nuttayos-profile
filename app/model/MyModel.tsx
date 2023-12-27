@@ -6,7 +6,9 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 function BrownBear() {
   const brownBear = useGLTF("/brown-bear.glb");
   useFrame(function ({ clock }) {
-    brownBear.scene.rotation.z = clock.getElapsedTime() / 10;
+    const easeInOutCubic = (t: number) =>
+      t < 60 ? 10 * Math.log(t) : t / 10 + 34.94;
+    brownBear.scene.rotation.z = easeInOutCubic(clock.getElapsedTime());
   });
   return <primitive object={brownBear.scene} scale={2} />;
 }
