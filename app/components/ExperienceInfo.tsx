@@ -22,10 +22,7 @@ const arrExpCard = [
       "design er-diagram and make SRS",
       "technology & tools: Nestjs, React, MySQL, Git, Docker, TS/JS, Jira",
     ],
-    images: [
-      { url: "/asset/demo-pic.jpg", alt: "hocco1" },
-      { url: "/asset/demo-pic.jpg", alt: "hocco2" },
-    ],
+    images: [{ url: "/asset/demo-pic.jpg", alt: "hocco1" }],
   },
   {
     companyName: "Denso International Asia Co.,Ltd",
@@ -38,10 +35,7 @@ const arrExpCard = [
       "standardize loss collection system in factory",
       "technology & tools: IoTdatashare, IoTdataview, postgreSQL",
     ],
-    images: [
-      { url: "/asset/demo-pic.jpg", alt: "denso1" },
-      { url: "/asset/demo-pic.jpg", alt: "denso2" },
-    ],
+    images: [{ url: "/asset/demo-pic.jpg", alt: "denso1" }],
   },
   {
     companyName: "Turnkey Communication Services Co.,LTD.",
@@ -53,10 +47,7 @@ const arrExpCard = [
       "proceed system integrator job, prepare and collaborate with vendor to create an appropriate solution for government bidding project (NBTC)",
       "technology & tools: Cubecell, Lora, Firebase",
     ],
-    images: [
-      { url: "/asset/demo-pic.jpg", alt: "turnkey1" },
-      { url: "/asset/demo-pic.jpg", alt: "turnkey2" },
-    ],
+    images: [{ url: "/asset/demo-pic.jpg", alt: "turnkey1" }],
   },
   {
     companyName: "Marsun",
@@ -68,10 +59,7 @@ const arrExpCard = [
       "recover plan whenever project behind schedule",
       "test electrical system on sea before handover",
     ],
-    images: [
-      { url: "/asset/demo-pic.jpg", alt: "marsun1" },
-      { url: "/asset/demo-pic.jpg", alt: "marsun2" },
-    ],
+    images: [{ url: "/asset/demo-pic.jpg", alt: "marsun1" }],
   },
 ];
 
