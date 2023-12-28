@@ -33,12 +33,6 @@ export default function RootLayout({
                   <div className="transition-[width] ease-in-out duration-500 delay-150 bg-[#E63946] h-1 w-0 clip-path-under-line group-hover:w-3/4" />
                 </Link>
               </li>
-              {/* <li className="group transition-all ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-125 hover:font-bold">
-                <Link href="https://www.google.com/" target="_blank">
-                  <span>github</span>
-                  <div className="transition-[width] ease-in-out duration-500 delay-150 bg-[#E63946] h-1 w-0 clip-path-under-line group-hover:w-3/4" />
-                </Link>
-              </li> */}
             </ul>
           </header>
           <div className="h-16 bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] clip-path-wave-down"></div>
@@ -48,12 +42,15 @@ export default function RootLayout({
             <div>&copy; Nuttayos Suvisuttikasame. All Rights Reserved.</div>
             <ul className="flex gap-4">
               <li>
-                <Link href="https://www.google.com/" target="_blank">
+                <Link href="https://github.com/Suvisuttikasame" target="_blank">
                   <FaGithub size="24px" />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.google.com/" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/in/nuttayos-suvisuttikasame-8a2693215/"
+                  target="_blank"
+                >
                   <FaLinkedin size="24px" />
                 </Link>
               </li>
