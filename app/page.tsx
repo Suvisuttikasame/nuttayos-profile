@@ -28,11 +28,11 @@ const exps = [
 const edus = [
   {
     schoolName: "Chulalongkorn university",
-    duration: "..., bachelor degree of electrical engineering",
+    duration: "graduated Jun 2018, bachelor degree of electrical engineering",
   },
   {
     schoolName: "Debsirin",
-    duration: "..., high school",
+    duration: "graduated Apr 2014, high school",
   },
 ];
 

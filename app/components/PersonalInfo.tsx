@@ -32,19 +32,29 @@ export default function PersonalInfo() {
         When not coding, I love playing football, collecting manga and usually
         spending time on YouTube. Hopefully, I&apos;ll make many connections in
         order to write a story together.
-        <br />
-        <span className="text-lg font-bold">Tools</span>
-        <br />
-        Client: React, Nextjs
-        <br />
-        Server: Nestjs, Nodejs
-        <br />
-        Database: PostgreSQL, MySQL
-        <br />
-        Infra: Docker
-        <br />
-        Manage: Jira, Asana
       </p>
+      <div className="flex gap-24 text-sm">
+        <div>
+          <h2 className="text-lg font-bold">Tools</h2>
+          <ul className="list-disc">
+            <li>Client: React, Nextjs</li>
+            <li>Server: Nestjs, Nodejs</li>
+            <li>Database: PostgreSQL, MySQL</li>
+            <li>Infra: Docker</li>
+            <li>Ver.control: Git</li>
+            <li>Manage: Jira, Asana</li>
+          </ul>
+        </div>
+        <div>
+          <h2 className="text-lg font-bold">Interpersonal skill</h2>
+          <ul className="list-disc">
+            <li>Team player</li>
+            <li>Responsibility and Integrity</li>
+            <li>Management and Problem solving</li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
     </div>
   );
 }
