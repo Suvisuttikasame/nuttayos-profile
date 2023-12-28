@@ -14,7 +14,7 @@ const MyModel = dynamic(() => import("../model/MyModel"), {
 
 export default function EducationInfo({ arrayEdu = [] }: props) {
   return (
-    <div className="flex gap-14 pl-2 pb-8 justify-center items-center">
+    <div className="flex gap-14 pl-2 pb-8 justify-center items-center max-[850px]:flex-col-reverse">
       <div className="flex">
         <MyModel />
       </div>

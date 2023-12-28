@@ -33,8 +33,8 @@ export default function PersonalInfo() {
         spending time on YouTube. Hopefully, I&apos;ll make many connections in
         order to write a story together.
       </p>
-      <div className="flex gap-24 text-sm">
-        <div>
+      <div className="flex text-sm max-[640px]:flex-col">
+        <div className="mr-24">
           <h2 className="text-lg font-bold">Tools</h2>
           <ul className="list-disc">
             <li>Client: React, Nextjs</li>

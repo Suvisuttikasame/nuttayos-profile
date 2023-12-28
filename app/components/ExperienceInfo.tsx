@@ -78,7 +78,7 @@ const arrExpCard = [
 export default function ExperienceInfo({ arrayExp = [] }: props) {
   const [clickedItem, setClickedItem] = useState("");
   return (
-    <div className="flex gap-14 pl-2 pb-8 justify-center items-center">
+    <div className="flex gap-14 pl-2 pb-8 justify-center items-center max-[850px]:flex-col">
       <div>
         <h1 className="text-lg font-extrabold decoration-1 transition duration-500 delay-150 hover:skew-y-2">
           Experience
