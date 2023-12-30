@@ -26,7 +26,7 @@ const projects = [
 
 export default function Project() {
   return (
-    <main className="text-xs">
+    <main className="text-xs flex-1">
       <div className="flex flex-col justify-center items-center gap-8">
         <section className="w-3/4 grid grid-cols-2 gap-4 max-[550px]:grid-cols-1">
           {projects.map((item, index) => {

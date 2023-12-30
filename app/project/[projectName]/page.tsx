@@ -69,7 +69,7 @@ const project: projectDescription = {
 
 export default function SubProject({ params }: props) {
   return (
-    <main className="flex flex-col gap-10 py-8 px-16 justify-center items-center">
+    <main className="flex flex-col gap-10 py-8 px-16 justify-center items-center flex-1">
       <BackButton position="start" />
       <ProjectInfo
         projectName={params.projectName}
@@ -81,6 +81,7 @@ export default function SubProject({ params }: props) {
           alt="project-pic"
           width={200}
           height={100}
+          priority
           style={{
             width: "100%",
             height: "100%",
@@ -93,6 +94,7 @@ export default function SubProject({ params }: props) {
           alt="project-pic"
           width={200}
           height={100}
+          priority
           style={{
             width: "100%",
             height: "100%",

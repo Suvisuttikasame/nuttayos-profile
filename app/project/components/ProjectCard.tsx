@@ -28,6 +28,7 @@ export default function ProjectCard({
               alt={`${projectName}-pic`}
               width={200}
               height={100}
+              priority
               style={{
                 width: "100%",
                 height: "100%",
