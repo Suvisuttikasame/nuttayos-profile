@@ -69,7 +69,7 @@ const project: projectDescription = {
 
 export default function SubProject({ params }: props) {
   return (
-    <main className="flex flex-col gap-10 py-8 px-16 justify-center items-center flex-1">
+    <main className="flex flex-col gap-8 py-8 px-16 justify-center items-center flex-1">
       <BackButton position="start" />
       <ProjectInfo
         projectName={params.projectName}

@@ -34,7 +34,7 @@ export default function PersonalInfo() {
         order to write a story together.
       </p>
       <div className="flex text-sm max-[640px]:flex-col">
-        <div className="mr-24">
+        <div className="mr-24 max-[640px]:mr-0">
           <h2 className="text-lg font-bold">Tools</h2>
           <ul className="list-disc">
             <li>Client: React, Nextjs</li>
