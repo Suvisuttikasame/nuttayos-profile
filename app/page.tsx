@@ -38,7 +38,7 @@ const edus = [
 
 export default async function Home() {
   return (
-    <main className="text-xs">
+    <main className="text-xs flex-1">
       <PersonalInfo />
       <ExperienceInfo arrayExp={exps} />
       <EducationInfo arrayEdu={edus} />

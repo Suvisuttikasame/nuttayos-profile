@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className}`}>
-        <div>
+        <div className="flex flex-col min-h-screen">
           <header className="flex justify-between bg-gradient-to-r from-[#A8DADC] to-[#F1FAEE] py-8 px-8">
             <div className="group transition-all ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-125  hover:font-bold">
               <Link href="/">
