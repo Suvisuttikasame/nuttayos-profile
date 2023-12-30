@@ -10,7 +10,7 @@ type props = {
 
 export default function ProjectInfo({ projectName, projectDesc }: props) {
   return (
-    <div className="w-1/2 max-[1100px]:w-3/4">
+    <div className="w-1/2 max-[1100px]:w-3/4 max-[550px]:w-auto">
       <h1 className="text-lg font-bold mb-4">{projectName}</h1>
       <ul className="text-sm flex flex-col gap-3">
         <li>
