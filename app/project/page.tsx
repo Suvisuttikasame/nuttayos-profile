@@ -9,7 +9,7 @@ const projects = [
   {
     projectName: "world-wise-react",
     description: "An location tracking web application for practice.",
-    image: "/asset/demo-pic.jpg",
+    image: "/asset/hero-world-wise.png",
   },
   {
     projectName: "Proshop",

@@ -72,7 +72,10 @@ const project: projectDescription = {
 };
 const images: projectImages = {
   "fast-pizza-co": ["/asset/form-pizza.png", "/asset/place-order-pizza.png"],
-  "world-wise-react": ["/asset/demo-pic.jpg", "/asset/demo-pic.jpg"],
+  "world-wise-react": [
+    "/asset/map-world-wise.png",
+    "/asset/form-world-wise.png",
+  ],
   Proshop: ["/asset/demo-pic.jpg", "/asset/demo-pic.jpg"],
   "smart-farm": ["/asset/demo-pic.jpg", "/asset/demo-pic.jpg"],
 };
