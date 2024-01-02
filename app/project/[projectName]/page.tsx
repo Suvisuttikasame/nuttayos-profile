@@ -2,6 +2,7 @@
 import Image from "next/image";
 import ProjectInfo from "./components/ProjectInfo";
 import BackButton from "../components/BackButton";
+import ProjectImages from "./components/ProjectImages";
 
 type props = {
   params: { projectName: string };
@@ -13,6 +14,9 @@ type projectDescription = {
     feature: string[];
     live: string;
   };
+};
+type projectImages = {
+  [projectName: string]: string[];
 };
 const project: projectDescription = {
   "fast-pizza-co": {
@@ -66,6 +70,19 @@ const project: projectDescription = {
     live: "-",
   },
 };
+const images: projectImages = {
+  "fast-pizza-co": ["/asset/form-pizza.png", "/asset/place-order-pizza.png"],
+  "world-wise-react": [
+    "/asset/map-world-wise.png",
+    "/asset/form-world-wise.png",
+  ],
+  Proshop: ["/asset/home-propshop.png", "/asset/item-propshop.png"],
+  "smart-farm": [
+    "/asset/board-smart-farm.jpg",
+    "/asset/cb-smart-farm.jpg",
+    "/asset/line-smart-farm.jpg",
+  ],
+};
 
 export default function SubProject({ params }: props) {
   return (
@@ -75,34 +92,7 @@ export default function SubProject({ params }: props) {
         projectName={params.projectName}
         projectDesc={project[params.projectName]}
       />
-      <div className="w-128 flex flex-col gap-2 py-4">
-        <Image
-          src="/asset/demo-pic.jpg"
-          alt="project-pic"
-          width={200}
-          height={100}
-          priority
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-          className="shadow-md rounded-md"
-        />
-        <Image
-          src="/asset/demo-pic.jpg"
-          alt="project-pic"
-          width={200}
-          height={100}
-          priority
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-          className="shadow-md rounded-md"
-        />
-      </div>
+      <ProjectImages images={images[params.projectName]} />
     </main>
   );
 }

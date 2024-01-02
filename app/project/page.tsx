@@ -4,23 +4,23 @@ const projects = [
   {
     projectName: "fast-pizza-co",
     description: "A small pizza shop with web application for practice.",
-    image: "/asset/demo-pic.jpg",
+    image: "/asset/hero-fast-pizza-co.png",
   },
   {
     projectName: "world-wise-react",
     description: "An location tracking web application for practice.",
-    image: "/asset/demo-pic.jpg",
+    image: "/asset/hero-world-wise.png",
   },
   {
     projectName: "Proshop",
     description: "An ecommerce platform.",
-    image: "/asset/demo-pic.jpg",
+    image: "/asset/hero-propshop.png",
   },
   {
     projectName: "smart-farm",
     description:
       "A drip irridation system farm for local people to save water during dry season.",
-    image: "/asset/demo-pic.jpg",
+    image: "/asset/hero-smart-farm.jpg",
   },
 ];
 

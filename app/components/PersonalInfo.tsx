@@ -5,15 +5,16 @@ export default function PersonalInfo() {
     <div className="flex flex-col items-center gap-2 py-2 pb-8">
       <div className="bg-[#FFF] h-24 w-24 rounded-full overflow-hidden drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]">
         <Image
-          src="/asset/demo-pic.jpg"
+          src="/asset/profile.jpeg"
           alt="profile"
-          sizes="100vw"
+          sizes="100vh"
           width={100}
           height={100}
           style={{
-            width: "100%",
-            height: "100%",
             objectFit: "cover",
+            scale: 1.5,
+            marginTop: "30px",
+            marginLeft: "10px",
           }}
         />
       </div>
@@ -29,9 +30,9 @@ export default function PersonalInfo() {
         believe we are born to be solution-makers, no matter which field you are
         in, you&apos;ll face problems. I realize and ready to tackle it.
         <br />
-        When not coding, I love playing football, collecting manga and usually
-        spending time on YouTube. Hopefully, I&apos;ll make many connections in
-        order to write a story together.
+        When not coding, I love football, collecting manga and usually spending
+        time on YouTube. Hopefully, I&apos;ll make many connections in order to
+        write a story together.
       </p>
       <div className="flex text-sm max-[640px]:flex-col">
         <div className="mr-24 max-[640px]:mr-0">
