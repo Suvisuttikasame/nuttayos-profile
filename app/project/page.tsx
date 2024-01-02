@@ -4,7 +4,7 @@ const projects = [
   {
     projectName: "fast-pizza-co",
     description: "A small pizza shop with web application for practice.",
-    image: "/asset/demo-pic.jpg",
+    image: "/asset/hero-fast-pizza-co.png",
   },
   {
     projectName: "world-wise-react",
