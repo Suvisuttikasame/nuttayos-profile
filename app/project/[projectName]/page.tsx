@@ -76,7 +76,7 @@ const images: projectImages = {
     "/asset/map-world-wise.png",
     "/asset/form-world-wise.png",
   ],
-  Proshop: ["/asset/demo-pic.jpg", "/asset/demo-pic.jpg"],
+  Proshop: ["/asset/home-propshop.png", "/asset/item-propshop.png"],
   "smart-farm": ["/asset/demo-pic.jpg", "/asset/demo-pic.jpg"],
 };
 

@@ -14,7 +14,7 @@ const projects = [
   {
     projectName: "Proshop",
     description: "An ecommerce platform.",
-    image: "/asset/demo-pic.jpg",
+    image: "/asset/hero-propshop.png",
   },
   {
     projectName: "smart-farm",
