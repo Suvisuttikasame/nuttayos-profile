@@ -44,15 +44,21 @@ export default function FlipedCard({
       <div
         className={`${
           clickedItem === companyName ? "block" : "hidden"
-        } [transform:rotateY(180deg)] bg-[#FFF] shadow-md absolute w-full h-full [backface-visibility:hidden] rounded-md p-4`}
+        } [transform:rotateY(180deg)] bg-[#FFF] shadow-md absolute w-full h-full [backface-visibility:hidden] rounded-md`}
       >
         {images.map((item, index) => {
           return (
             <div
-              className="overflow-hidden rounded-md drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]"
+              className="overflow-hidden rounded-md drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)] w-full h-full"
               key={index}
             >
-              <Image src={item.url} alt={item.alt} width={500} height={500} />
+              <Image
+                src={item.url}
+                alt={item.alt}
+                width={500}
+                height={500}
+                className="h-80 aspect-auto"
+              />
             </div>
           );
         })}
