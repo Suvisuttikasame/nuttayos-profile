@@ -77,7 +77,11 @@ const images: projectImages = {
     "/asset/form-world-wise.png",
   ],
   Proshop: ["/asset/home-propshop.png", "/asset/item-propshop.png"],
-  "smart-farm": ["/asset/demo-pic.jpg", "/asset/demo-pic.jpg"],
+  "smart-farm": [
+    "/asset/board-smart-farm.jpg",
+    "/asset/cb-smart-farm.jpg",
+    "/asset/line-smart-farm.jpg",
+  ],
 };
 
 export default function SubProject({ params }: props) {

@@ -20,7 +20,7 @@ const projects = [
     projectName: "smart-farm",
     description:
       "A drip irridation system farm for local people to save water during dry season.",
-    image: "/asset/demo-pic.jpg",
+    image: "/asset/hero-smart-farm.jpg",
   },
 ];
 
